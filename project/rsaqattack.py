@@ -445,7 +445,6 @@ if __name__ == '__main__':
     IBMQ.load_accounts()"""
     IBMQ.delete_account()
     token = input('IBMQ API token, hub , group , project:')
-    token='fdab5fd2b11d0f25f605490b55e1e20dd19725177b5f6cddba1bdc71acc244993834560af49499bc6c2fc12a884d39640943950e72cb87235923e0c6cc942f2d'
     IBMQ.enable_account(token)
     IBMQ.save_account(token)
 
