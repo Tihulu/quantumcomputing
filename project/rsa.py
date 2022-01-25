@@ -1,4 +1,4 @@
-import math as m
+import math
 import random 
 print("RSA ENCRYPTOR/DECRYPTOR")
 print("*****************************************************")
@@ -54,27 +54,35 @@ def eea(a,b):
     #calculating n=p*q
 n=p*q
 r=(p-1)*(q-1)
+ne=math.ceil(math.log2(n))
+print(n, ':value n' , ne , ':bit encryption')
+
+bitn=2*ne+3
+print(bitn, 'val of qubit numb')
+
     #Carmichael's totient function lcm(p-1,q-1) 
 _lambda = int(abs((p-1)*(q-1)) / gcd(p-1,q-1))
+print("Carmichael's totient function lcm(p-1,q-1) :", _lambda)
 print("*****************************************************")
 
     #e Value Calculation
     # RANDOM POSSIBLE VALUE OF 'e' BETWEEN 1 and _lambda THAT MAKES (e,_lambda)) COPRIME.'''
 err=[]
-for i in range(1,_lambda):
-    if(gcd(i,_lambda)==1):
+for i in range(1,r):
+    if(gcd(i,r)==1):
         err.append(i)
-random.seed(4)
-e=random.choice(err)
+# random.seed(37)
+print(err)
+e=int(input("e in array:"))
+# e=random.choice(err)
 
 print("The value of e is:",e)
 
 
     #find value d
-
-gdc,einv,__=eea(e,_lambda)    
+gdc,einv,__=eea(((e) % _lambda),_lambda)    
     # d == e^(-1) mod (_lambda) 
-print(einv,_lambda, 'einv, _lambda')
+# print(einv,_lambda, 'einv, _lambda')
 d=((einv) % _lambda)
 
 print(d, 'value d')
