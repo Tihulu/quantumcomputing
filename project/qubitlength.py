@@ -1,3 +1,5 @@
+import math
+
 text=input('N = p*q, type N or bitlength of rsa:\n 1 for N, 2 for bitl. (format: 1, N):')
 txt=text.split(',')
 select , val = txt
