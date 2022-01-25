@@ -23,6 +23,7 @@ import numpy as np
 import random as rand
 
 key_public=input('Public key (e,n):')
+message = input("What would you like to decrypted?(Separate numbers with ',' :")
 txt=key_public.split(',')
 et , nt = txt
 et=int(et)
@@ -614,7 +615,7 @@ if __name__ == '__main__':
         print(asciiarr)
         return from_ascii(asciiarr)
 
-    message = input("What would you like to decrypted?(Separate numbers with ',' :")
+    #message = input("What would you like to decrypted?(Separate numbers with ',' :")
 
     n=nt
     e=et
