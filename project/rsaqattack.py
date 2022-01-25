@@ -514,11 +514,11 @@ if __name__ == '__main__':
     """ Simulate the created Quantum Circuit """
     aaat=input('press 1 to draw 2  for not to:')
     while True:
-    if aaat=='1':
-        circuit.draw(output='text')
-        break
-    else:
-        break
+        if aaat=='1':
+            circuit.draw(output='text')
+            break
+        else:
+            break
     aaat=input('press to continue:')
     provider = IBMQ.load_account()
     apiserver = input('IBMQ Server to run:')
