@@ -449,6 +449,7 @@ if __name__ == '__main__':
     IBMQ.enable_account(token)
     IBMQ.save_account(token)
 
+
     """ Get an integer a that is coprime with N """
     cter = 0
     while(True):
@@ -511,9 +512,16 @@ if __name__ == '__main__':
     print('Executing the circuit {0} times for N={1} and a={2}\n'.format(number_shots,N,a))
 
     """ Simulate the created Quantum Circuit """
+    aaat=input('press 1 to draw 2  for not to:')
+    if aaat=='1':
+        circuit.draw(output='text')
+        break
+    aaat=input('press to continue:')
     provider = IBMQ.load_account()
     apiserver = input('IBMQ Server to run:')
     backend = provider.get_backend(str(apiserver))
+    # provider = IBMQ.get_provider(hub='ibm-q-education', group='mid-east-tech-un-1', project='2300343-Intro-Computational-Methods')
+    # backend = provider.get_backend('ibmq_qasm_simulator')
 
     simulation = execute(circuit, backend=backend)
     """ to run on IBM, use backend=IBMQ.get_backend('ibmq_qasm_simulator') in execute() function """
@@ -554,8 +562,6 @@ if __name__ == '__main__':
 
         """ Get the factors using the x value obtained """   
         success = get_factors(int(x_value),int(2*n),int(N),int(a))
-       # q=henlo[1]
-       # p=henlo[2]
         if success==True:
             prob_success = prob_success + prob_this_result
 
@@ -627,7 +633,7 @@ if __name__ == '__main__':
 
         #find value d
 
-    gdc,einv,__=eea(e,_lambda)    
+    gdc,einv,__=eea(((e) % _lambda),_lambda)    
         # d == e^(-1) mod (_lambda) 
     print(einv,_lambda, 'einv, _lambda')
     d=((einv) % _lambda)
