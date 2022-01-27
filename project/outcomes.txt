@@ -1,0 +1,198 @@
+(base) C:\Users\Bilal Emmi\Desktop\qcomp\project>python tets.py
+18 val of t, val of n bit length: 7
+17 val of qubit numb
+input number was: 119
+
+Total number of qubits used: 17
+
+Executing the circuit 3 times for N=119 and a=8
+
+ibmqfactory.load_account:WARNING:2022-01-25 02:26:10,442: Credentials are already in use. The existing account in the session will be replaced.
+Printing the various results followed by how many times they happened (out of the 3 cases):
+
+Result "0 00000000000000" happened 477 times out of 3
+Result "0 01000000000000" happened 493 times out of 3
+Result "0 01100000000000" happened 513 times out of 3
+Result "1 10000000000000" happened 489 times out of 3
+Result "1 10100000000000" happened 532 times out of 3
+Result "1 11000000000000" happened 485 times out of 3
+Result "1 11100000000000" happened 510 times out of 3
+Result "0 00100000000000" happened 501 times out of 3
+
+------> Analysing result 00000000000000. This result happened in 15900.0000 % of all cases
+
+In decimal, x_final value for this result is: 0
+
+x_value is <= 0, there are no continued fractions
+
+------> Analysing result 01000000000000. This result happened in 16433.3333 % of all cases
+
+In decimal, x_final value for this result is: 4096
+
+Running continued fractions for this case
+
+Approximation number 1 of continued fractions:
+Numerator:0              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 2 of continued fractions:
+Numerator:1              Denominator: 4
+
+Found just trivial factors, not good enough
+
+The continued fractions found exactly x_final/(2^(2n)) , leaving funtion
+
+------> Analysing result 01100000000000. This result happened in 17100.0000 % of all cases
+
+In decimal, x_final value for this result is: 6144
+
+Running continued fractions for this case
+
+Approximation number 1 of continued fractions:
+Numerator:0              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 2 of continued fractions:
+Numerator:1              Denominator: 2
+
+Found just trivial factors, not good enough
+
+Input number 1 if you want to continue searching, other if you do not:
+------> Analysing result 10000000000000. This result happened in 16300.0000 % of all cases
+
+In decimal, x_final value for this result is: 8192
+
+Running continued fractions for this case
+
+Approximation number 1 of continued fractions:
+Numerator:0              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 2 of continued fractions:
+Numerator:1              Denominator: 2
+
+Found just trivial factors, not good enough
+
+The continued fractions found exactly x_final/(2^(2n)) , leaving funtion
+
+------> Analysing result 10100000000000. This result happened in 17733.3333 % of all cases
+
+In decimal, x_final value for this result is: 10240
+
+Running continued fractions for this case
+
+Approximation number 1 of continued fractions:
+Numerator:0              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 2 of continued fractions:
+Numerator:1              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 3 of continued fractions:
+Numerator:1              Denominator: 2
+
+Found just trivial factors, not good enough
+
+Input number 1 if you want to continue searching, other if you do not:
+------> Analysing result 11000000000000. This result happened in 16166.6667 % of all cases
+
+In decimal, x_final value for this result is: 12288
+
+Running continued fractions for this case
+
+Approximation number 1 of continued fractions:
+Numerator:0              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 2 of continued fractions:
+Numerator:1              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 3 of continued fractions:
+Numerator:2              Denominator: 3
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 4 of continued fractions:
+Numerator:3              Denominator: 4
+
+Found just trivial factors, not good enough
+
+Input number 1 if you want to continue searching, other if you do not: 1
+Approximation number 5 of continued fractions:
+Numerator:3              Denominator: 4
+
+Found just trivial factors, not good enough
+
+The continued fractions found exactly x_final/(2^(2n)) , leaving funtion
+
+------> Analysing result 11100000000000. This result happened in 17000.0000 % of all cases
+
+In decimal, x_final value for this result is: 14336
+
+Running continued fractions for this case
+
+Approximation number 1 of continued fractions:
+Numerator:0              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 2 of continued fractions:
+Numerator:1              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 3 of continued fractions:
+Numerator:6              Denominator: 7
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 4 of continued fractions:
+Numerator:7              Denominator: 8
+
+The factors of 119 are 17 and 7
+
+Found the desired factors!
+
+------> Analysing result 00100000000000. This result happened in 16700.0000 % of all cases
+
+In decimal, x_final value for this result is: 2048
+
+Running continued fractions for this case
+
+Approximation number 1 of continued fractions:
+Numerator:0              Denominator: 1
+
+Odd denominator, will try next iteration of continued fractions
+
+Approximation number 2 of continued fractions:
+Numerator:1              Denominator: 8
+
+The factors of 119 are 17 and 7
+
+Found the desired factors!
+
+
+Using a=8, found the factors of N=119 in 33700.0000 % of the cases
+
+1 = 3*(1) + (-1)*(2)
+1 = 5*(-1) + (2)*(3)
+1 = 48*(2) + (-19)*(5)
+1 = 5*(-19) + (2)*(48)
+-19 48 einv, _lambda
+29 value d
+public key(e,n): (53, 119)
+
+public key(d,n): (29, 119)
+[83, 33, 94, 75, 76, 2, 51, 88, 33, 94]
+[104, 101, 110, 108, 111, 32, 102, 114, 101, 110]
+String: henlo fren
+Your decrypted message is: henlo fren
