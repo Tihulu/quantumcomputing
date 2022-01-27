@@ -135,13 +135,10 @@ choose = input("Type '1' for encryption and '2' for decrytion.")
 if(choose=='1'):
     enc_msg=encrypt(pub_key,message)
     print("Your encrypted message is:",enc_msg)
-    print("Thank you for using the RSA Encryptor. Goodbye!")
 elif(choose=='2'):
     print("Your decrypted message is:",decrypt(priv_key,message))
-    print("Thank you for using the RSA Encryptor. Goodbye!")
 else:
     print("You entered the wrong option.")
-    print("Thank you for using the RSA Encryptor. Goodbye!")
 
 
 
