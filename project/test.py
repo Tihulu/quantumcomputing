@@ -646,7 +646,7 @@ if __name__ == '__main__':
     pub_key=(e,n)
     priv_key=(d,n)
     print('public key(e,n):', pub_key)
-    print('\npublic key(d,n):', priv_key)
+    print('\nprivate key(d,n):', priv_key)
 
 
 
