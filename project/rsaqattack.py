@@ -645,8 +645,10 @@ if __name__ == '__main__':
 
     pub_key=(e,n)
     priv_key=(d,n)
+    print("Public key", pub_key)
+    print("Private key", pub_key)
+    
 
 
     print("Your decrypted message is:",decrypt(priv_key,message))
     print("\n or Your decrypted message is:",decrypt(priv_key,message))
-    print("Thank you for using the RSA Encryptor. Goodbye!")
