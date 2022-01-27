@@ -1,3 +1,16 @@
+######   I used and edited shor() function's source code on qiskit and applied on my rsa script
+"""
+#### Instead of trying to find a by hand on the script I created this loop to find coprime values and randomly selects it
+cter = 0
+    while(True):
+        a = rand.randrange(1,N)
+        cter = cter + 1
+        if np.gcd(a,N)==1:
+            break
+"""
+
+
+
 """
 This is the final implementation of Shor's Algorithm using the circuit presented in section 2.3 of the report about the second
 simplification introduced by the base paper used.
